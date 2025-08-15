@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+# MessMates – Smart Mess Management Hub
 
-## Project info
+MessMates is a smart, digital, and scalable platform designed to manage hostel/college mess operations efficiently.  
+It offers real-time menu updates, attendance tracking, feedback handling, and billing — all in one place.
 
-**URL**: https://lovable.dev/projects/d8135b29-1e81-4b9a-9c78-e068e491f35c
+---
 
-## How can I edit this code?
+## 🚀 Features
+- **User Registration & Login** (Firebase Authentication)
+- **Weekly Menu Display**
+- **Feedback & Complaint Submission**
+- **Leave Meal Deduction Requests**
+- **Meal Attendance Tracking** (QR code-based)
+- **Admin Dashboard** for:
+  - Updating menus
+  - Reviewing feedback
+- **Monthly Bill Estimation**
+- **Mobile-friendly UI** with Tailwind CSS
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠 Tech Stack
+- **Frontend:** React + TypeScript + Vite
+- **Styling:** Tailwind CSS + PostCSS
+- **Backend/Database:** Firebase Firestore
+- **Auth:** Firebase Authentication
+- **Build Tool:** Vite
+- **Linting:** ESLint
+- **Package Manager:** npm / bun
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d8135b29-1e81-4b9a-9c78-e068e491f35c) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📂 Project Structure
+```
+messmate-smart-hub-main/
+│── public/             # Static assets
+│── src/                # Main source code
+│   ├── components/     # Reusable React components
+│   └── ...             # Pages, hooks, services
+│── firestore.rules     # Firestore database security rules
+│── tailwind.config.ts  # Tailwind configuration
+│── vite.config.ts      # Vite build configuration
+│── tsconfig*.json      # TypeScript configurations
+│── package.json        # Dependencies & scripts
+│── postcss.config.js   # PostCSS setup
+│── eslint.config.js    # ESLint setup
+│── README.md           # Project documentation
+```
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ⚙️ Installation
+```bash
+# Clone the repository
+git clone https://github.com/timepass8729/MessMates.git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Navigate to the project directory
+cd MessMates
 
-Follow these steps:
+# Install dependencies (choose one)
+npm install
+# OR
+bun install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔑 Environment Variables
+Create a `.env` file in the root and add your Firebase config:
+```
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📜 Firebase Setup
+1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+2. Enable **Authentication** (Email/Password).
+3. Set up **Firestore Database** with appropriate rules (`firestore.rules`).
+4. Enable **Hosting** if deploying via Firebase.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🖥 Development
+```bash
+# Run linting
+npm run lint
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Build for production
+npm run build
 
-## How can I deploy this project?
+# Preview production build
+npm run preview
+```
 
-Simply open [Lovable](https://lovable.dev/projects/d8135b29-1e81-4b9a-9c78-e068e491f35c) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📌 Deployment
+You can deploy MessMates to:
+- **Firebase Hosting**
+- **Vercel**
+- **Netlify**
 
-Yes, you can!
+Example for Firebase Hosting:
+```bash
+firebase login
+firebase init hosting
+firebase deploy
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 👨‍💻 Author
+Developed by **Megharaj Dandgavhal**  
+GitHub: [@timepass8729](https://github.com/meghraj2004)
