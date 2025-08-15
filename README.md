@@ -120,4 +120,4 @@ firebase deploy
 
 ## 👨‍💻 Author
 Developed by **Megharaj Dandgavhal**  
-GitHub: [@timepass8729](https://github.com/meghraj2004)
+GitHub: [@Meghraj2004](https://github.com/meghraj2004)
