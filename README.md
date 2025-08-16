@@ -92,7 +92,7 @@ VITE_FIREBASE_APP_ID=your_app_id
 ## 🖥 Development
 ```bash
 # Run linting
-npm run lint
+npm run dev
 
 # Build for production
 npm run build
